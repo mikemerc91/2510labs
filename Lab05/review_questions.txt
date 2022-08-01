@@ -1,0 +1,39 @@
+// lab 5 exercise 2
+2.1 -- What is a base class?
+
+A base class is a superclass that subclasses (ie derived classes) inherit basic
+functionality from. Base classes have member functions that can be inherited and
+extended (overridden) by their derived classes.         
+
+2.2 -- What makes a class derived?
+
+A class is derived when it inherits all the members of a base class, in addition 
+to its own. Derived classes extend the functionality of base classes.
+
+2.3 -- What is a virtual function and how does it differ from a non-virtual function?
+
+A virtual function is defined in a base class and overridden in a subclass. Functions 
+called from subclasses share the same name as base class virtual functions, but have
+implementation specific to the requirements of the subclass.
+
+2.4 -- What is the difference between a protected member and a private one?
+
+Private members are only accessible by the class itself or a friend. Protected members
+are accessible by the class and all subtypes, including friends of subtypes.
+
+2.5 -- How does a pure virtual function differ from other virtual functions?
+
+A pure virtual function is a function that must be overridden by any subclasses of the 
+base class. A class that contains a pure virtual function is an abstract class and 
+may not be directly instantiated.
+
+2.6 -- Why would you make a member function virtual?
+
+A member function should be made virtual when it is expected that a subtype will override 
+the function.
+
+2.7 -- Why would you make a virtual member function pure?
+
+Virtual member functions should be made pure when the output of the function is so 
+heavily dependent on the subclass it is called from that no sensible default output can
+be implemented in the base class.

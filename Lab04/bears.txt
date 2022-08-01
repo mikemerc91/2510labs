@@ -1,0 +1,4 @@
+bears: 17 elephants: 9
+cats: 10 dogs: 3
+chinese food
+combo number 1
